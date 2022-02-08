@@ -38,9 +38,14 @@ server {
 
 - Create a new customer at your Spheremail app
 - Open your browser at `http://your.host.domain`
-- You should see the log of received events that looks like:
+- You should see the list of received events that looks like:
 
 <img width="1309" alt="shot-1" src="https://user-images.githubusercontent.com/7306310/153089685-58bb8c7c-a81d-4f1c-adc4-8047e92b57e9.png">
+
+- Also, you can see details of POST request coming from the Spheremail app in the console of Docker. It should look like:
+
+<img width="1296" alt="shot-2" src="https://user-images.githubusercontent.com/7306310/153090610-6cc4c573-2eed-4705-9b66-c0c11ab7922c.png">
+
 
 ### Run webhooks server standalone
 - Make sure that the port number 3000 is available for outside connections
