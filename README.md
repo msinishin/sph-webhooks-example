@@ -5,7 +5,7 @@
 
 ### Build server
 - Clone this repository to your host;
-- Change the current directory to `sph-webhooks-example`;
+- Change the current directory to the cloned `sph-webhooks-example` folder;
 - Build the docker image by the following command:
 
 ```
