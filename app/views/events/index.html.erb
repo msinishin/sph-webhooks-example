@@ -1,0 +1,26 @@
+<div class="table">
+  <div>Event</div>
+  <div>Account ID</div>
+  <div>PMB</div>
+  <div>Company Name</div>
+  <div>Full Name</div>
+  <div>User Name</div>
+  <div>Email</div>
+  <div>Plan</div>
+  <div>Created On</div>
+  <div>Registered On</div>
+  <div>Activated</div>
+  <% @events.each do |event| %>
+    <div><%= event.event %></div>
+    <div><%= event.account_id %></div>
+    <div><%= event.pmb %></div>
+    <div><%= event.company_name %></div>
+    <div><%= event.full_name %></div>
+    <div><%= event.user_name %></div>
+    <div><%= event.email %></div>
+    <div><%= event.plan %></div>
+    <div><%= event.created_on %></div>
+    <div><%= event.registered_on %></div>
+    <div><%= event.is_active %></div>
+  <% end %>
+</div>

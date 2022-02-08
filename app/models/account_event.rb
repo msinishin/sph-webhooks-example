@@ -1,0 +1,3 @@
+class AccountEvent < ApplicationRecord
+
+end
