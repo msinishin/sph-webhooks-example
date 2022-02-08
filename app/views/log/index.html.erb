@@ -1,5 +1,5 @@
 <div class="table">
-  <div>Event</div>
+  <div>Event Type</div>
   <div>Account ID</div>
   <div>PMB</div>
   <div>Company Name</div>
@@ -11,7 +11,7 @@
   <div>Registered On</div>
   <div>Activated</div>
   <% @events.each do |event| %>
-    <div><%= event.event %></div>
+    <div><%= event.event_type %></div>
     <div><%= event.account_id %></div>
     <div><%= event.pmb %></div>
     <div><%= event.company_name %></div>

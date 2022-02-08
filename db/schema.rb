@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_02_08_150432) do
 
   create_table "account_events", force: :cascade do |t|
-    t.string "event", null: false
+    t.string "event_type", null: false
     t.integer "account_id", null: false
     t.integer "pmb"
     t.string "company_name"
