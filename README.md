@@ -48,7 +48,7 @@ server {
 
 
 ### Run webhooks server standalone
-- Make sure that the port number 3000 is available for outside connections
+- Make sure that the port number 3000 is available on your host for outside connections
 - Start the webhooks server by the following command:
 
 ```
