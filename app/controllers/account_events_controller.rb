@@ -9,7 +9,7 @@ class AccountEventsController < ApplicationController
     account_event = AccountEvent.new
     account_event.event_type   = params[:event_type]
     account_event.account_id   = params[:id]
-    account_event.pmb =        = params[:pmb]
+    account_event.pmb          = params[:pmb]
     account_event.user_name    = params[:user_name]
     account_event.full_name    = params[:full_name]
     account_event.email        = params[:email]
