@@ -33,8 +33,8 @@ server {
 ```
 - Add the URL of webhooks example server to your Spheremail app
   - In the Spheremail app, go to Account > Business Settings > Integrations > Webhooks, `+ Add Webhook`;
-  - Set `Endpoint URL` to: `http://your.host.domain/account_events?secret=0948707d125096dbd3bc4264a8bbf8c1` ;
-  - Set `Events to send` to: `account.create` ;
+  - Set `Endpoint URL` to: `http://your.host.domain/account_events?secret=0948707d125096dbd3bc4264a8bbf8c1`
+  - Set `Events to send` to: `account.create`
 
 - Create a new customer at your Spheremail app
 - Check the events received by webhooks server in a browser at `http://your.host.domain`
