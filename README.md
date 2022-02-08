@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Requirements
+- Docker installed on your host
 
-Things you may want to cover:
+### Build server
+- Clone this repository to your host;
+- Change the current directory to the `sph-webhooks-example`;
+- Build the docker image by the following command:
 
-* Ruby version
+```
+sudo docker build -t sph-webhooks .
+```
 
-* System dependencies
+### Start server
+- Start the server by the following command:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+sudo docker run --name webhooks --workdir /sph-webhooks-example -p 127.0.0.1:3000:3000 sph-webhooks
+```
