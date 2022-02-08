@@ -38,3 +38,20 @@ server {
 
 - Create a new customer at your Spheremail app
 - Check the events received by webhooks server in a browser at `http://your.host.domain`
+
+### Run webhooks server standalone
+- Make sure that the port number 3000 is available for outside connections
+- Start the webhooks server by the following command:
+
+```
+sudo docker run --name webhooks --workdir /sph-webhooks-example -p 127.0.0.1:3000:3000 sph-webhooks
+```
+
+- Add the URL of webhooks example server to your Spheremail app
+  - In the Spheremail app, go to Account > Business Settings > Integrations > Webhooks, `+ Add Webhook`;
+  - Set `Endpoint URL` to: `http://your.host.domain/account_events:3000?secret=0948707d125096dbd3bc4264a8bbf8c1`
+  - Set `Events to send` to: `account.create`
+
+- Create a new customer at your Spheremail app
+- Check the events received by webhooks server in a browser at `http://your.host.domain:3000`
+
