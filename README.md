@@ -37,7 +37,10 @@ server {
   - Set `Events to send` to: `account.create`
 
 - Create a new customer at your Spheremail app
-- Check the events received by webhooks server in a browser at `http://your.host.domain`
+- Open your browser at `http://your.host.domain`
+- You should see the log of received events that looks like:
+
+<img width="1309" alt="shot-1" src="https://user-images.githubusercontent.com/7306310/153089685-58bb8c7c-a81d-4f1c-adc4-8047e92b57e9.png">
 
 ### Run webhooks server standalone
 - Make sure that the port number 3000 is available for outside connections
