@@ -7,4 +7,4 @@ RUN cd /sph-webhooks-example \
 
 EXPOSE 3000
 
-ENTRYPOINT ["bundle","exec","puma","-C","config/puma.rb","-t","1:2","-p","3000"]
+ENTRYPOINT ["rails","s","-b","0.0.0.0"]
