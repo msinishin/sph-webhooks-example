@@ -94,3 +94,8 @@ The `account.create` event is sent to a Webhook endpoint when a new account is r
 - "is_manager"=>false,
 - "is_super_admin"=>false,
 - "secret"=>"[FILTERED]"
+
+### Mail Received Event
+
+TO DO...
+
