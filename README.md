@@ -66,3 +66,31 @@ sudo docker run --name webhooks --workdir /sph-webhooks-example -p 127.0.0.1:300
 - Create a new customer at your Spheremail app
 - Check the events received by webhooks server in a browser at `http://your.host.domain:3000`
 
+## Events Specification
+
+### Account Created Event
+The `account.create` event is sent to a Webhook endpoint when a new account is registered at the Spheremail app. The event has the following attributes:
+
+- "id"=>26975,  // Account ID
+- "event_type"=>"account.create",
+- "created_at"=>"2022-02-08T14:04:28-08:00",
+- "full_name"=>"Emma Student",
+- "email"=>"alex+emma@spheremail.co",
+- "company_name"=>"ABCD company",
+- "user_name"=>"emmastudent",
+- "pmb"=>nil,
+- "city"=>"Belmont",
+- "state"=>"CA",
+- "country"=>"US",
+- "street"=>"12 St. Lane",
+- "phone"=>"+12222222222",
+- "zip_code"=>"95001",
+- "plan"=>nil,
+- "created_on"=>"2022-02-08",
+- "registered_on"=>"2022-02-08",
+- "is_active"=>false,
+- "is_admin"=>false,
+- "is_mail_admin"=>false,
+- "is_manager"=>false,
+- "is_super_admin"=>false,
+- "secret"=>"[FILTERED]"
